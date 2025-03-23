@@ -82,6 +82,11 @@
         display: block;
         margin: 10px 0;
       }
+    /*tạo khung tròn khi di chuột vào*/
+      .danhmucsp li:hover {
+        background-color: #797474; 
+        border-radius: 10px; 
+    }
     /* chân trang */
     footer {
         background-color: #efe8e8;
