@@ -4,10 +4,11 @@
         padding: 0;
         box-sizing: border-box;
         font-family: Arial, sans-serif;
-        background-color: #f8f9fa;
+        background-color: #b5c0cc;
     }
     /* Thanh ngang */
     .thanhngang {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -16,14 +17,14 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     .thanhngang button:hover {
-        background-color: #e84118;
+        background-color: greenyellow;
     }
     .thanhngang button {
         padding: 8px 16px;
         margin-left: 10px;
         border: none;
         border-radius: 20px;
-        background-color: #ff4757;
+        background-color: green;
         color: white;
         cursor: pointer;
         transition: background 0.3s;
@@ -73,8 +74,15 @@
         float:  left;
         border-radius: 10px;
     }
+    .danhmucsp li:hover{
+        border-radius: 10px;
+        background-color: #efe8e89d;
+    }
     .danhmucsp h2 {
         text-align: center;
+    }
+    .danhmucsp li{
+        color: #2d2d2d;
     }
     .danhmucsp a {
         color: white;
@@ -82,11 +90,6 @@
         display: block;
         margin: 10px 0;
       }
-    /*tạo khung tròn khi di chuột vào*/
-      .danhmucsp li:hover {
-        background-color: #797474; 
-        border-radius: 10px; 
-    }
     /* chân trang */
     footer {
         background-color: #efe8e8;
@@ -130,45 +133,90 @@
     }
     /* Qui định chung*/
     .km,.give,.mc,.htmn,.gyhn{
-        display: flex;
-        background: rgb(15, 57, 182);
+        display: grid;
+        background: rgb(249, 249, 250);
         border: #190804;
         text-align: center;
-        margin-left: 300px;
+        margin-left: 310px;
         margin-top: 10px;
+        border-radius: 10px;
+        color: #190804;
     }
-
     /* Gợi ý hôm nay */
     .gyhn {
-        width: 1170px;
+        width: 1165px auto;
         height: 200px;
-        font-size: 20px;
-        font-weight: 20px;
-        color: white;
         margin-bottom: 10px;
+    }
+    .sanpham {
+        display: flex;  /* Sắp xếp ảnh theo hàng ngang */
+        gap: 10px; /* Khoảng cách giữa các ảnh */
+        overflow-x: auto; /* Cho phép cuộn ngang nếu ảnh quá nhiều */
+        padding: 10px 0;
+        white-space: nowrap;
+    }
+    
+    .sanpham img {
+        width: 150px; /* Điều chỉnh kích thước ảnh */
+        height: auto;
+        border-radius: 8px; /* Bo góc nhẹ */
+        transition: transform 0.3s ease-in-out;
+    }
+    .gia{
         text-align: center;
+        color: red;
+        margin-bottom: 5px;
+    }
+    .sanpham img:hover {
+        transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
+    }
+    .gyhn h4{
+        margin-top: 10px;
+        text-align: left;
+        margin-left: 10px;
     }
 /* Hàng khuyến mãi */
     .km{
-        width: 1170px;
+        width: 1165px auto;
         height: 200px;
-        color: white;
+        margin-bottom: 10px;
     }
+    .km h4{
+        margin-top: 10px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    
     /* Máy cũ thu cũ */
     .mc{
-        width: 1170px;
+        width: 1165px auto;
         height: 200px;
-        color: white;
+        margin-bottom: 10px;
+    }
+    .mc h4{
+        margin-top: 10px;
+        text-align: left;
+        margin-left: 10px;
     }
      /*Hàng tốt mọi ngày*/
      .htmn{
-        width: 1170px;
+        width: 1165px auto;
         height: 200px;
-        color: white;
+        margin-bottom: 10px;
+     }
+     .htmn h4{
+        margin-top: 10px;
+        text-align: left;
+        margin-left: 10px;
      }
      /*Give away 10k*/
      .give{
-        width: 1170px;
+        width: 1165px auto;
         height: 200px;
-        color: white;
+        margin-bottom: 10px;
+     }
+     .give h4 {
+        margin-top: 10px;
+        text-align: left;
+        margin-left: 10px;
      }
