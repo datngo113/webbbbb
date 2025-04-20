@@ -132,7 +132,7 @@
         padding-top: 10px;
     }
     /* Qui định chung*/
-    .km,.give,.mc,.htmn,.gyhn{
+    .mayincu,.quangcao,.inhoadon,.inhopbiacung,.intoroi{
         display: grid;
         background: rgb(249, 249, 250);
         border: #190804;
@@ -142,9 +142,9 @@
         border-radius: 10px;
         color: #190804;
     }
-    /* Gợi ý hôm nay */
-    .gyhn {
-        width: 1165px auto;
+    /* Máy in cũ */
+    .mayincu {
+        width: auto;
         height: 200px;
         margin-bottom: 10px;
     }
@@ -154,13 +154,13 @@
         overflow-x: auto; /* Cho phép cuộn ngang nếu ảnh quá nhiều */
         padding: 10px 0;
         white-space: nowrap;
-    }
-    
+        }
     .sanpham img {
         width: 150px; /* Điều chỉnh kích thước ảnh */
         height: auto;
         border-radius: 8px; /* Bo góc nhẹ */
         transition: transform 0.3s ease-in-out;
+        
     }
     .gia{
         text-align: center;
@@ -170,52 +170,74 @@
     .sanpham img:hover {
         transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
     }
-    .gyhn h4{
+    .mayincu h4{
         margin-top: 10px;
         text-align: left;
         margin-left: 10px;
     }
-/* Hàng khuyến mãi */
-    .km{
-        width: 1165px auto;
+/* Quảng cáo*/
+    .quangcao{
+        width: auto;
         height: 200px;
         margin-bottom: 10px;
     }
-    .km h4{
+    .quangcao h4{
         margin-top: 10px;
         text-align: left;
         margin-left: 10px;
     }
     
-    /* Máy cũ thu cũ */
-    .mc{
-        width: 1165px auto;
+    .sanpham {
+        display: flex;  /* Sắp xếp ảnh theo hàng ngang */
+        gap: 10px; /* Khoảng cách giữa các ảnh */
+        overflow-x: auto; /* Cho phép cuộn ngang nếu ảnh quá nhiều */
+        padding: 10px 0;
+        white-space: nowrap;
+        }
+    .sanpham img {
+        width: 150px; /* Điều chỉnh kích thước ảnh */
+        height: auto;
+        border-radius: 8px; /* Bo góc nhẹ */
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    .gia{
+        text-align: center;
+        color: red;
+        margin-bottom: 5px;
+    }
+    .sanpham img:hover {
+        transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
+    }
+    /* In hóa đơn */
+    .inhoadon{
+        width: auto;
         height: 200px;
         margin-bottom: 10px;
     }
-    .mc h4{
+    .inhoadon h4{
         margin-top: 10px;
         text-align: left;
         margin-left: 10px;
     }
-     /*Hàng tốt mọi ngày*/
-     .htmn{
-        width: 1165px auto;
+     /*In hộp bìa cứng*/
+     .inhopbiacung{
+        width: auto;
         height: 200px;
         margin-bottom: 10px;
      }
-     .htmn h4{
+     .inhopbiacung h4{
         margin-top: 10px;
         text-align: left;
         margin-left: 10px;
      }
-     /*Give away 10k*/
-     .give{
-        width: 1165px auto;
+     /*In tờ rơi*/
+     .intoroi{
+        width: auto;
         height: 200px;
         margin-bottom: 10px;
      }
-     .give h4 {
+     .intoroi h4 {
         margin-top: 10px;
         text-align: left;
         margin-left: 10px;
