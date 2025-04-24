@@ -1,121 +1,286 @@
-<!DOCTYPE html>
-<html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="mayindecal.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <title>WEB Bán Máy In</title>
-  </head>
-  <body>
-    <div class="thanhngang">
-      <div class="logo">
-        <img src="Image/Logoweb.jpg" alt="Logo test" />
-        <a class="chulogo"><h4>WEB Bán Máy In</h4></a>
-      </div>
-      <a class="timkiem"><input type="search" placeholder="Tìm Kiếm" /></a>
-      <a class="trangchu" href="Nhóm 4 LT WEB.html"
-        ><i class="fa-solid fa-house"></i> Trang Chủ
-      </a>
-      <a class="thongbao" href="#"><i class="fa-solid fa-bell"></i>Thông báo</a>
-      <a class="tddh" href="#"><i class="fa-solid fa-truck"></i>Giao Đến</a>
-      <a class="giohang" href="#"
-        ><button class="fa-solid fa-cart-shopping"></button
-      ></a>
-      <button>Tài Khoản</button>
-    </div>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #b5c0cc;
+}
+/* Thanh ngang */
+.thanhngang {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.thanhngang button:hover {
+  background-color: greenyellow;
+}
+.thanhngang button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.thanhngang a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
 
-    <div class="danhmucsp">
-      <h2>Dịch Vụ Máy In</h2>
-      <ul>
-        <li><a href="#">Mua máy in văn phòng</a></li>
-        <li><a href="#">Mua máy in màu</a></li>
-        <li><a href="#">Mua máy in decant</a></li>
-        <li><a href="#">Bơm mực</a></li>
-        <li><a href="#">Sửa máy</a></li>
-        <li><a href="#">Mua linh kiện</a></li>
-        <li><a href="#">Mua mực máy in</a></li>
-      </ul>
-    </div>
-    <div class="mayindecal">
-      <h4>MÁY IN DECAL</h4>
-      <div class="sanpham">
-        <div>
-          <img src="Image/DT1.jpg" alt="Máy in decal 1" />
-          <p class="mota">Máy in decal tốc độ cao</p>
-          <div class="gia">3.500.000₫</div>
-        </div>
-        <div>
-          <img src="Image/DT2.jpg" alt="Máy in decal 2" />
-          <p class="mota">In tem nhãn sắc nét</p>
-          <div class="gia">4.200.000₫</div>
-        </div>
-        <div>
-          <img src="Image/DT3.jpg" alt="Máy in decal 3" />
-          <p class="mota">Máy in decal nhiệt mini</p>
-          <div class="gia">5.100.000₫</div>
-        </div>
-        <div>
-          <img src="Image/MT 1.jpg" alt="Máy in decal 4" />
-          <p class="mota">Máy in mã vạch decal</p>
-          <div class="gia">3.850.000₫</div>
-        </div>
-        <div>
-          <img src="Image/MT 1.jpg" alt="Máy in decal 5" />
-          <p class="mota">In decal khổ lớn</p>
-          <div class="gia">4.500.000₫</div>
-        </div>
-        <div>
-          <img src="Image/MT 2.jpg" alt="Máy in decal 6" />
-          <p class="mota">Máy in decal màu</p>
-          <div class="gia">6.300.000₫</div>
-        </div>
-        <div>
-          <img src="Image/MT 3.jpg" alt="Máy in decal 7" />
-          <p class="mota">In nhãn sản phẩm chất lượng</p>
-          <div class="gia">3.900.000₫</div>
-        </div>
-        <div>
-          <img src="Image/MT 4.jpg" alt="Máy in decal 8" />
-          <p class="mota">Máy in tem giá siêu nét</p>
-          <div class="gia">5.800.000₫</div>
-        </div>
-        <div>
-          <img src="Image/DT1.jpg"Máy in decal 9" />
-          <p class="mota">Decal nhãn dán chống nước</p>
-          <div class="gia">4.750.000₫</div>
-        </div>
-      </div>
-    </div>
+.thanhngang a:hover {
+  color: #ffdd57;
+}
+/* Logo căn về bên trái */
+.chulogo {
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto; /* Đẩy các phần tử khác sang phải */
+}
+.logo img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 50px;
+}
 
-    <footer>
-      <div class="noichua">
-        <div class="chantrang1">
-          <h4 class="follow">FOLLOW US</h4>
-          <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
-          <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
-          <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
-        </div>
-        <div class="chantrang2 huongdan">
-          <h4 class="guide">HƯỚNG DẪN</h4>
-          <a href="#">Mua hàng</a>
-          <a href="#">Thanh toán</a>
-          <a href="#">Vận chuyển</a>
-          <a href="#">Chính sách bảo hành</a>
-        </div>
-        <div class="chantrang3 ketnoi">
-          <h4 class="contact">CONTACT US</h4>
-          <p>Email: support@example.com</p>
-          <p>Phone: +84 123 456 789</p>
-          <p>Address: 123 Đường ABC, Bình Định, Việt Nam</p>
-        </div>
-      </div>
-      <div class="footer-duoi">
-        <p>&copy; Thông tin chi tiết chưa biết</p>
-      </div>
-    </footer>
-  </body>
-</html>
+/* Ô tìm kiếm */
+.timkiem input {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  width: 500px;
+  transition: width 0.3s ease;
+}
+/*danh mục sản phẩm*/
+.danhmucsp {
+  width: 250px;
+  height: calc(100vh - 60px);
+  background-color: #2d2d2d;
+  color: white;
+  padding: 20px;
+  float: left;
+  border-radius: 10px;
+}
+.danhmucsp li:hover {
+  border-radius: 10px;
+  background-color: #efe8e89d;
+}
+.danhmucsp h2 {
+  text-align: center;
+}
+.danhmucsp li {
+  color: #2d2d2d;
+}
+.danhmucsp a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+}
+/* chân trang */
+footer {
+  background-color: #efe8e8;
+  color: rgb(4, 1, 1);
+  padding: 20px 0;
+  text-align: center;
+}
+.noichua {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.chantrang1,
+.chantrang2,
+.chantrang3 {
+  width: 30%;
+  padding: 10px;
+}
+
+.follow,
+.guide,
+.contact {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #f39c12;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.chantrang1 a,
+.chantrang2 a,
+.chantrang3 a {
+  display: block;
+  color: rgb(16, 15, 15);
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.chantrang1 a:hover,
+.chantrang2 a:hover,
+.chantrang3 a:hover {
+  color: #f39c12;
+}
+
+.footer-duoi {
+  margin-top: 20px;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+}
+/* Qui định chung*/
+.mayincu,
+.quangcao,
+.inhoadon,
+.inhopbiacung,
+.intoroi {
+  display: grid;
+  background: rgb(249, 249, 250);
+  border: #190804;
+  text-align: center;
+  margin-left: 310px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #190804;
+}
+/* Máy in cũ */
+.mayincu {
+  width: auto;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.sanpham {
+  display: flex; /* Sắp xếp ảnh theo hàng ngang */
+  gap: 10px; /* Khoảng cách giữa các ảnh */
+  overflow-x: auto; /* Cho phép cuộn ngang nếu ảnh quá nhiều */
+  padding: 10px 0;
+  white-space: nowrap;
+}
+.sanpham img {
+  width: 150px; /* Điều chỉnh kích thước ảnh */
+  height: auto;
+  border-radius: 8px; /* Bo góc nhẹ */
+  transition: transform 0.3s ease-in-out;
+}
+.gia {
+  text-align: center;
+  color: red;
+  margin-bottom: 5px;
+}
+.sanpham img:hover {
+  transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
+}
+.mayincu h4 {
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 10px;
+}
+/* Quảng cáo*/
+.quangcao {
+  width: auto;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.quangcao h4 {
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.sanpham {
+  display: flex; /* Sắp xếp ảnh theo hàng ngang */
+  gap: 10px; /* Khoảng cách giữa các ảnh */
+  overflow-x: auto; /* Cho phép cuộn ngang nếu ảnh quá nhiều */
+  padding: 10px 0;
+  white-space: nowrap;
+}
+.sanpham img {
+  width: 150px; /* Điều chỉnh kích thước ảnh */
+  height: auto;
+  border-radius: 8px; /* Bo góc nhẹ */
+  transition: transform 0.3s ease-in-out;
+}
+.gia {
+  text-align: center;
+  color: red;
+  margin-bottom: 5px;
+}
+.sanpham img:hover {
+  transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
+}
+/* In hóa đơn */
+.inhoadon {
+  width: auto;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.inhoadon h4 {
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 10px;
+}
+/*In hộp bìa cứng*/
+.inhopbiacung {
+  width: auto;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.inhopbiacung h4 {
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 10px;
+}
+/*In tờ rơi*/
+.intoroi {
+  width: auto;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.intoroi h4 {
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 10px;
+}
+/* Dòng sản phẩm máy in decal */
+.mayindecal .sanpham {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* mỗi dòng 2 sản phẩm */
+  gap: 15px;
+  padding: 10px;
+}
+
+.mayindecal .sanpham div {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mayindecal .sanpham img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mayindecal .sanpham img:hover {
+  transform: scale(1.05);
+}
+
+/* Giá */
+.mayindecal .gia {
+  text-align: center;
+  color: red;
+  margin-top: 5px;
+}
+
