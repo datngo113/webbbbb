@@ -251,34 +251,19 @@ footer {
   text-align: left;
   margin-left: 10px;
 }
-.mayindecal {
-  width: 250px; /* Thu gọn chiều ngang */
-  height: 600px; /* Chiều cao cố định, cho phép cuộn dọc */
-  margin-left: 310px;
-  margin-top: 10px;
-  border-radius: 10px;
-  background: rgb(249, 249, 250);
-  border: #190804;
-  text-align: center;
-  color: #190804;
-  margin-bottom: 10px;
-  overflow-y: auto; /* Cho phép cuộn dọc */
-}
-
-.mayindecal h4 {
-  margin-top: 10px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
 /* Dòng sản phẩm máy in decal */
 .mayindecal .sanpham {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* mỗi dòng 2 sản phẩm */
+  gap: 15px;
   padding: 10px;
 }
 
 .mayindecal .sanpham div {
-  margin-bottom: 10px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .mayindecal .sanpham img {
@@ -297,16 +282,4 @@ footer {
   text-align: center;
   color: red;
   margin-top: 5px;
-}
-.mayindecal {
-  width: 800px;
-  height: 600px;
-  margin: 20px auto;
-  border-radius: 10px;
-  background: rgb(249, 249, 250);
-  border: 1px solid #190804;
-  text-align: center;
-  color: #190804;
-  overflow-y: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
