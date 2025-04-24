@@ -1,0 +1,176 @@
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== HEADER / THANH NGANG ===== */
+.thanhngang {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.chulogo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.thanhngang a,
+.thanhngang button,
+.thanhngang input[type="search"] {
+    margin-left: 15px;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.thanhngang input[type="search"] {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: black;
+}
+
+/* ===== DANH MỤC ===== */
+.danhmucsp {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.danhmucsp h2 {
+    margin-bottom: 10px;
+}
+
+.danhmucsp ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.danhmucsp li {
+    margin: 5px 0;
+}
+
+.danhmucsp a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* ===== TIÊU ĐỀ CHUYÊN MỤC ===== */
+.Dienthoai {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ===== DANH SÁCH SẢN PHẨM ===== */
+.dssp {
+    padding: 20px;
+}
+
+.sp-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.sp-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(25% - 20px);
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.sp-card:hover {
+    transform: scale(1.02);
+}
+
+.sp-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.sp-info {
+    padding: 15px;
+}
+
+.sp-price .price {
+    color: #e91e63;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sp-description {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+}
+
+.noichua {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-duoi {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .sp-card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@
