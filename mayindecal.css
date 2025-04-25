@@ -251,10 +251,29 @@ footer {
   text-align: left;
   margin-left: 10px;
 }
-/* Dòng sản phẩm máy in decal */
+/* Máy in decal */
+.mayindecal {
+  margin-left: 310px;
+  margin-top: 10px;
+  background: rgb(249, 249, 250);
+  border-radius: 10px;
+  padding: 20px;
+  color: #190804;
+}
+
+.mayindecal h4 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin: 20px 0;
+  border-bottom: 3px solid #f39c12;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
 .mayindecal .sanpham {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* mỗi dòng 2 sản phẩm */
+  grid-template-columns: repeat(3, 1fr); /* 3 sản phẩm 1 hàng */
   gap: 15px;
   padding: 10px;
 }
@@ -264,6 +283,7 @@ footer {
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .mayindecal .sanpham img {
@@ -277,9 +297,15 @@ footer {
   transform: scale(1.05);
 }
 
-/* Giá */
+.mayindecal .mota {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
 .mayindecal .gia {
   text-align: center;
   color: red;
   margin-top: 5px;
+  font-weight: bold;
 }
+
